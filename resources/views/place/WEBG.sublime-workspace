@@ -1,0 +1,1662 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"function"
+			],
+			[
+				"subca",
+				"subcat"
+			],
+			[
+				"sub",
+				"subcategories"
+			],
+			[
+				"chek",
+				"chechk"
+			],
+			[
+				"che",
+				"chechk"
+			],
+			[
+				"subcat",
+				"subcategories"
+			],
+			[
+				"categ",
+				"category_id"
+			],
+			[
+				"Blade",
+				"Blade::if	Blade @if"
+			],
+			[
+				"lis",
+				"lists"
+			],
+			[
+				"formc",
+				"formcheckbox	{!! Form::checkbox() !!}"
+			],
+			[
+				"subc",
+				"subcategories"
+			],
+			[
+				"on",
+				"on"
+			],
+			[
+				"SU",
+				"subcategories"
+			],
+			[
+				"PLACE",
+				"place_toEdit"
+			],
+			[
+				"ca",
+				"category_id"
+			],
+			[
+				"area",
+				"area_id"
+			],
+			[
+				"place",
+				"place_toEdit"
+			],
+			[
+				"plac",
+				"place_toEdit"
+			],
+			[
+				"comm",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"Place",
+				"PlaceController"
+			],
+			[
+				"com",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"co",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"su",
+				"subcategories"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"formte",
+				"formtextarea	{!! From::textarea() !!}"
+			],
+			[
+				"Blad",
+				"Blade::extends	Blade @extends"
+			],
+			[
+				"Sub",
+				"subcategory"
+			],
+			[
+				"tags",
+				"Tags"
+			],
+			[
+				"ke",
+				"keSubcaty"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"main",
+				"main_categories"
+			],
+			[
+				"app",
+				"appconfig"
+			],
+			[
+				"Sc",
+				"Schema::table-update	Update an existing table"
+			],
+			[
+				"arra",
+				"array	$… = array (…)"
+			],
+			[
+				"Bla",
+				"Blade::unless	Blade @unless"
+			],
+			[
+				"ma",
+				"main_categories"
+			],
+			[
+				"form",
+				"formselect	{!! Form::select() !!}"
+			],
+			[
+				"route",
+				"Route"
+			],
+			[
+				"ar",
+				"areas"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"Req",
+				"Request::all	Get all of the input and files for the request."
+			],
+			[
+				"te",
+				"TEXTAREA"
+			],
+			[
+				"la",
+				"LABEL"
+			],
+			[
+				"For",
+				"Form"
+			],
+			[
+				"con",
+				"config_content"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"service",
+				"servicetags_id"
+			],
+			[
+				"res",
+				"res"
+			],
+			[
+				"G",
+				"GOOGLE_API_KEY"
+			],
+			[
+				"D",
+				"DB_HOST"
+			],
+			[
+				"DB_",
+				"DB_PASSWORD"
+			],
+			[
+				"send",
+				"send_notification"
+			],
+			[
+				"stor",
+				"storeUser"
+			],
+			[
+				"loca",
+				"localhost"
+			],
+			[
+				"conne",
+				"connect"
+			],
+			[
+				"catego",
+				"categories"
+			],
+			[
+				"pare",
+				"parent_id"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"ta",
+				"tags"
+			],
+			[
+				"v",
+				"Value"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"clea",
+				"cleanServicetags"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"serv",
+				"serviceTags"
+			],
+			[
+				"ser",
+				"servicetagsArray"
+			],
+			[
+				"arra_p",
+				"array_push"
+			],
+			[
+				"row",
+				"row3"
+			],
+			[
+				"sq",
+				"sql2"
+			],
+			[
+				"pla",
+				"place_imgs"
+			],
+			[
+				"pa",
+				"pathsarray"
+			],
+			[
+				"th",
+				"thumbpath"
+			],
+			[
+				"ara",
+				"areaCode"
+			],
+			[
+				"opt",
+				"option"
+			],
+			[
+				"mu",
+				"multiselect"
+			],
+			[
+				"fa",
+				"facebookLink"
+			],
+			[
+				"my",
+				"myPlace"
+			],
+			[
+				"mysqli_fetch",
+				"mysqli_fetch_assoc"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"categor",
+				"sub_category"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
+				"lo",
+				"longitude"
+			],
+			[
+				"lon",
+				"longitude"
+			],
+			[
+				"long",
+				"long"
+			],
+			[
+				"req",
+				"require_once"
+			],
+			[
+				"prod",
+				"productsImagesPaths"
+			],
+			[
+				"ga",
+				"galleryImagesPaths"
+			],
+			[
+				"pro",
+				"productsCount"
+			],
+			[
+				"mysq",
+				"mysqli"
+			],
+			[
+				"subCa",
+				"subcategories"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"sca",
+				"scanned_directory"
+			],
+			[
+				"f",
+				"files1"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"fil",
+				"filepath"
+			],
+			[
+				"pat",
+				"path"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"ima",
+				"imagesCount"
+			],
+			[
+				"gal",
+				"galeryType"
+			],
+			[
+				"ic",
+				"icoimage"
+			],
+			[
+				"pan",
+				"panel-default"
+			],
+			[
+				"an",
+				"announce_id"
+			],
+			[
+				"delete-",
+				"delete-announce"
+			],
+			[
+				"delet",
+				"delete"
+			],
+			[
+				"ac",
+				"actions"
+			],
+			[
+				"ann",
+				"announceID"
+			],
+			[
+				"sql",
+				"sql"
+			],
+			[
+				"db",
+				"DBMANGER"
+			],
+			[
+				"DB",
+				"DB_MANGER"
+			],
+			[
+				"ne",
+				"newt_bell"
+			],
+			[
+				"palc",
+				"palceID"
+			],
+			[
+				"tota",
+				"total_count"
+			],
+			[
+				"mysqli_fe",
+				"mysqli_fetch_assoc"
+			],
+			[
+				"announcement",
+				"announcements"
+			],
+			[
+				"offers",
+				"offersArray"
+			],
+			[
+				"fore",
+				"foreach	<?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"t",
+				"td"
+			],
+			[
+				"ex",
+				"expiration"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"red",
+				"redirect_to"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "edit.blade.php",
+			"settings":
+			{
+				"buffer_size": 5195,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "view.blade.php",
+			"settings":
+			{
+				"buffer_size": 2136,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Mohamed/webcraftguide/app/Http/Controllers/PlaceController.php",
+			"settings":
+			{
+				"buffer_size": 1503,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Mohamed/webcraftguide/app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 2744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Mohamed/webcraftguide/app/Place.php",
+			"settings":
+			{
+				"buffer_size": 547,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Mohamed/webcraftguide/app/Http/Controllers/TagsController.php",
+			"settings":
+			{
+				"buffer_size": 1063,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Mohamed/webcraftguide/app/Subcategory.php",
+			"settings":
+			{
+				"buffer_size": 745,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home.blade.php",
+			"settings":
+			{
+				"buffer_size": 614,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@extends('config.appconfig')\n\n@section('config_content')\n             <div id=\"area_table\" >\n             <table class=\"table table-condensed table-striped \">\n              <thead>\n              <tr>\n                <th>#</th>\n                <th>Area Name</th>\n                <th>Places Count</th>\n              </tr>\n              </thead>\n              <tbody>\n@foreach ($areas as $area)\n                <tr>\n                  <td>{{$area['id']}}</td>\n                  <td>{{$area['area_name']}}</td>\n                  <td>{{$area['created_at']}}</td>\n\n              </tr>\n@endforeach\n              </tbody>\n            </table><hr>\n           </div> <!-- end of area table div   -->    \n\n            <H3>Add new Area </H3> \n\n            {{Form::open(array('url'=>'/appconfig/area','method'=>'post','class'=>'form-inline'))}}\n\n            {{Form::label('area_name','New area name: ')}}\n            \n            {{Form::text('area_name',null, ['class'=>'form-control'])}}\n            \n            {!!Form::submit('submit',array('class'=>'btn btn-default'))!!}\n            {{Form::close()}}\n              <hr>\n            {{ $areas }} \n\n\n\n@endsection\n   \n",
+			"file": "/C/Users/Mohamed/webcraftguide/resources/views/config/areaconfig.blade.php",
+			"file_size": 1268,
+			"file_write_time": 131111768881873485,
+			"settings":
+			{
+				"buffer_size": 1158,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "  							 {{($place_toEdit->subcategories->contains($subcat['id']))?'checked=\"\"':\"\" }} \n",
+			"settings":
+			{
+				"buffer_size": 88,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"pakage control",
+				"Package Control: Add Repository"
+			],
+			[
+				"package con",
+				"Package Control: Add Repository"
+			],
+			[
+				"Snippet: ",
+				"Snippet: {!! Form::checkbox() !!}"
+			],
+			[
+				"Package in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Mohamed/webcraftguide/resources/views/place/newplace.blade.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_07_04_064154_alltering_tables_with_nullable_fields.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/place/home.blade.php",
+		"/C/Users/Mohamed/Desktop/Capture.PNG",
+		"/C/Users/Mohamed/webcraftguide/resources/views/layouts/app.blade.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/place/newplace___splitform .blade.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/config/areaconfig.blade.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/openapp.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/patient_home.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/patient_followup.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/pat_profileview.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/doctor_profileView.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/doctor_home.php",
+		"/C/SAAD/htdocs/helpme_v3_styled/views/home.php",
+		"/C/Users/Mohamed/webcraftguide/config/auth.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/appconfig.blade.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/welcome.blade.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/config/categoriesconfig.blade.php",
+		"/C/Users/Mohamed/webcraftguide/app/Http/routes.php",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/SubcategoriesController.php",
+		"/C/Users/Mohamed/webcraftguide/app/ServiceTags.php",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/CategoriesController.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/config/tagsconfig.blade.php",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/TagsController.php",
+		"/C/Users/Mohamed/webcraftguide/tests/todo",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/HomeController.php",
+		"/C/Users/Mohamed/webcraftguide/app/Subcategory.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_07_02_180700_subcategory_servicetags_relation.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/handler.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/db.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/functions.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/update_basic2.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/edit_place.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/update_basic.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/config/appconfig.blade.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_24_010236_add_subcategory_to_category_relation.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_124513_create_servicetags.php",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/AreasController.php",
+		"/C/Users/Mohamed/webcraftguide/app/Area.php",
+		"/C/Users/Mohamed/webcraftguide/composer.json",
+		"/C/Users/Mohamed/webcraftguide/config/app.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/areaconfig.blade.php",
+		"/C/Users/Mohamed/webcraftguide/resources/appconfig.blade.php",
+		"/C/Users/Mohamed/webcraftguide/app/Category.php",
+		"/C/Users/Mohamed/webcraftguide/resources/views/home.blade.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_130117_add_missing_relations.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_124503_create_subcategories.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_103711_create_service_tags_table.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_103721_create_offers_table.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_120532_create_pivot_tables.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_103657_create_sub_categories_table.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_103617_create_places_table.php",
+		"/C/Users/Mohamed/webcraftguide/app/Place.php",
+		"/C/Users/Mohamed/webcraftguide/app/User.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_103646_create_categories_table.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Mohamed/webcraftguide/config/database.php",
+		"/C/Users/Mohamed/webcraftguide/.env",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/PlaceController.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_21_200222_create_placesTable.php",
+		"/C/Users/Mohamed/webcraftguide/database/migrations/2016_06_23_103635_create_areas_table.php",
+		"/C/Users/Mohamed/webcraftguide/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/zag-app/helper/db.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/GCM.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/gcm_db_connect.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/gcm_db_functions.php",
+		"/C/xampp/htdocs/tests/index.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/gcm_register.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/config.php",
+		"/C/xampp/htdocs/zag-app/helper/gcm_db_connect.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/xampp/htdocs/zag-app/helper/config - Copy.php",
+		"/C/xampp/htdocs/zag-app/helper/GCM.php",
+		"/C/xampp/htdocs/zag-app/helper/config.php",
+		"/C/xampp/htdocs/zag-app/helper/gcm_send_message.php",
+		"/C/xampp/htdocs/zag-app/helper/gcm_db_functions.php",
+		"/C/xampp/htdocs/zag-app/gcm_home.php",
+		"/C/xampp/htdocs/zag-app/gcm_register.php",
+		"/C/xampp/htdocs/zag-app/config.php",
+		"/C/xampp/htdocs/zag-app/helper/GCM/gcm_register.php",
+		"/C/xampp/htdocs/zag-app/triggerman3.php",
+		"/C/xampp/htdocs/zag-app/helper/gcm_register.php",
+		"/C/xampp/htdocs/zag-app/helper/GCM/gcm_send_message.php",
+		"/C/xampp/htdocs/zag-app/views/places.php",
+		"/C/xampp/htdocs/zag-app/triggerman.php",
+		"/C/xampp/htdocs/zag-app/helper/functions.php",
+		"/C/xampp/htdocs/zag-app/views/place/edit_place.php",
+		"/C/xampp/htdocs/zag-app/views/place/update_basic.php",
+		"/C/xampp/htdocs/zag-app/helper/place-class.php",
+		"/C/xampp/htdocs/zag-app/views/place/multiselect.php",
+		"/C/xampp/htdocs/zag-app/todo list",
+		"/C/xampp/htdocs/zag-app/views/place/update_imgs.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-2/config.php",
+		"/C/xampp/htdocs/zag-app/assets/multiselect/jquery-ui.css",
+		"/C/xampp/htdocs/zag-app/assets/multiselect/style.css",
+		"/C/xampp/htdocs/zag-app/assets/multiselect/jquery.multiselect.css",
+		"/C/xampp/htdocs/zag-app/assets/multiselect/prettify.css",
+		"/D/DATA/Programming Tools/JAVA SCRIPTS/jquery-ui-multiselect-widget-master/jquery-ui-multiselect-widget-master/demos/single.htm",
+		"/C/xampp/htdocs/zag-app/views/place/create_place.php",
+		"/D/DATA/Programming Tools/JAVA SCRIPTS/jquery-ui-multiselect-widget-master/jquery-ui-multiselect-widget-master/demos/filter.htm",
+		"/C/xampp/htdocs/zag-app/api/index.php",
+		"/C/xampp/htdocs/zag-app/map.php",
+		"/C/xampp/htdocs/zag-app/map2.php",
+		"/C/xampp/htdocs/zag-app/handler.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/index 2.php",
+		"/C/mashaly latest/views/place/update_basic.php",
+		"/C/mashaly latest/views/place/edit_place.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/index 3.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/place-class 2.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/place-class.php",
+		"/C/Users/Mohamed/Downloads/index (1).php",
+		"/C/xampp/htdocs/zag-app/views/place/upadte_imgs.php",
+		"/C/xampp/htdocs/zag-app/development files/handler.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-2/db.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/config 2.php",
+		"/C/xampp/htdocs/zag-app/index.php",
+		"/C/Users/Mohamed/mashaly public/public_html/helper/config.php",
+		"/C/Users/Mohamed/zag live/public_html/helper/config.php",
+		"/C/Users/Mohamed/AppData/Local/Temp/fz3temp-1/triggerman.php",
+		"/C/xampp/htdocs/zag-app/helper/triggerman.php",
+		"/C/xampp/htdocs/zag-app/public_html/views/place/edit_place.php",
+		"/C/xampp/htdocs/zag-app/public_html/helper/functions.php",
+		"/C/xampp/htdocs/zag-app/public_html/helper/place-class.php",
+		"/C/xampp/htdocs/zag-app1/helper/config.php",
+		"/C/xampp/htdocs/zag-app1/helper/config - Copy.php",
+		"/C/xampp/htdocs/zag-app1/config.php",
+		"/C/xampp/htdocs/zag-app/public_html/helper/db.php",
+		"/C/xampp/htdocs/zag-app/public_html/config.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cheked",
+			"category_id",
+			"var",
+			"').\n",
+			"script",
+			"%\">",
+			"placen",
+			"place",
+			"regist",
+			"categ",
+			"main",
+			"');",
+			" >",
+			",",
+			", ",
+			"=\n",
+			"echo \"1\";\n// $d=new DB_connect();\n// $d->connect();\n// echo \"2\";",
+			"p->ta",
+			"serviceTag_id",
+			"seerviceTag_id",
+			"category",
+			"category1",
+			"span",
+			"white",
+			"white ",
+			"white !important",
+			"iso",
+			"face",
+			"Upda",
+			"upda",
+			"INSE",
+			"SELECT",
+			"succ",
+			"suce",
+			"Address",
+			"DB",
+			"zag",
+			"cl",
+			"select",
+			"galler",
+			"$p-",
+			"suce",
+			"Crea",
+			"utf",
+			"ut",
+			"succ",
+			"za",
+			"contente",
+			"public",
+			"mysqli_real_escape_string (",
+			"real_escape_string",
+			"inser",
+			"uploadPlaceGalleryImages",
+			"hidden",
+			"delete",
+			"zag",
+			"view_search",
+			"HANDLER",
+			"			$",
+			"'];\n",
+			"butt",
+			"sele",
+			"basic",
+			"redirect_to",
+			"uploadGalleryImages",
+			"crea",
+			"hre",
+			"all",
+			"_FILES[\"ico_img\"]",
+			"sess",
+			"saveImage",
+			"zag-app/",
+			"hid",
+			"hidd",
+			"#",
+			"pal",
+			"  ",
+			"edit_place",
+			"edite_",
+			"['q']",
+			"SESS",
+			"sess",
+			"href=\"?id",
+			"id=",
+			"utf",
+			"page",
+			"health",
+			".js",
+			"script",
+			"عمارة الاوقاف",
+			"?",
+			"subcategory 2",
+			"na",
+			">\n",
+			"lang",
+			"php",
+			"checkpassword",
+			"redi",
+			"redirect",
+			"message",
+			";\n",
+			"()",
+			"lis",
+			"port",
+			"car",
+			"Employee",
+			"HPW",
+			"dest_loc",
+			"'",
+			"brow",
+			"cr",
+			"create_incoming_shipment",
+			"self.bro",
+			"source"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"mysqli_real_escape_string ($mysqli,",
+			"mysqli_real_escape_string",
+			"Car"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "edit.blade.php",
+					"settings":
+					{
+						"buffer_size": 5195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								500,
+								500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 127.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "view.blade.php",
+					"settings":
+					{
+						"buffer_size": 2136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1786,
+								1786
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 275.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Mohamed/webcraftguide/app/Http/Controllers/PlaceController.php",
+					"settings":
+					{
+						"buffer_size": 1503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1348,
+								1348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 533.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Mohamed/webcraftguide/app/Http/routes.php",
+					"settings":
+					{
+						"buffer_size": 2744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								845,
+								845
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Mohamed/webcraftguide/app/Place.php",
+					"settings":
+					{
+						"buffer_size": 547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								547,
+								547
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Mohamed/webcraftguide/app/Http/Controllers/TagsController.php",
+					"settings":
+					{
+						"buffer_size": 1063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Mohamed/webcraftguide/app/Subcategory.php",
+					"settings":
+					{
+						"buffer_size": 745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								734,
+								714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "home.blade.php",
+					"settings":
+					{
+						"buffer_size": 614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Mohamed/webcraftguide/resources/views/config/areaconfig.blade.php",
+					"settings":
+					{
+						"buffer_size": 1158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								730,
+								1093
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"settings":
+					{
+						"buffer_size": 88,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								10
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 231.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"place",
+				"app/Http/Controllers/PlaceController.php"
+			],
+			[
+				"view",
+				"resources/views/place/view.blade.php"
+			],
+			[
+				"route",
+				"app/Http/routes.php"
+			],
+			[
+				"area",
+				"resources/views/config/areaconfig.blade.php"
+			],
+			[
+				"home.",
+				"resources/views/place/home.blade.php"
+			],
+			[
+				"subcate",
+				"app/Subcategory.php"
+			],
+			[
+				"new",
+				"resources/views/place/newplace.blade.php"
+			],
+			[
+				"tags",
+				"app/Http/Controllers/TagsController.php"
+			],
+			[
+				"allter",
+				"database/migrations/2016_07_04_064154_alltering_tables_with_nullable_fields.php"
+			],
+			[
+				"rout",
+				"app/Http/routes.php"
+			],
+			[
+				"are",
+				"resources/views/config/areaconfig.blade.php"
+			],
+			[
+				"home",
+				"resources/views/place/home.blade.php"
+			],
+			[
+				"rou",
+				"app/Http/routes.php"
+			],
+			[
+				"todo",
+				"tests/todo"
+			],
+			[
+				"sub",
+				"app/Http/Controllers/SubcategoriesController.php"
+			],
+			[
+				"",
+				"app/Http/Controllers/TagsController.php"
+			],
+			[
+				"subca",
+				"app/Http/Controllers/SubcategoriesController.php"
+			],
+			[
+				"ser",
+				"app/ServiceTags.php"
+			],
+			[
+				"categ",
+				"app/Http/Controllers/CategoriesController.php"
+			],
+			[
+				"cate",
+				"app/Http/Controllers/CategoriesController.php"
+			],
+			[
+				"ro",
+				"app/Http/routes.php"
+			],
+			[
+				"tag",
+				"resources/views/config/tagsconfig.blade.php"
+			],
+			[
+				"categor",
+				"app/Http/Controllers/CategoriesController.php"
+			],
+			[
+				"welcome",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"tagsco",
+				"app/Http/Controllers/TagsController.php"
+			],
+			[
+				"tagsconfig.",
+				"resources/views/config/tagsconfig.blade.php"
+			],
+			[
+				"tagscon",
+				"app/Http/Controllers/TagsController.php"
+			],
+			[
+				"blade",
+				"resources/views/appconfig.blade.php"
+			],
+			[
+				"app",
+				"resources/views/appconfig.blade.php"
+			],
+			[
+				"wel",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"categori",
+				"resources/views/config/categoriesconfig.blade.php"
+			],
+			[
+				"subcateg",
+				"app/Http/Controllers/SubcategoriesController.php"
+			],
+			[
+				"categoriescontroller",
+				"app/Http/Controllers/CategoriesController.php"
+			],
+			[
+				"cat",
+				"resources/views/config/categoriesconfig.blade.php"
+			],
+			[
+				"categoriesconfig.blade.php",
+				"resources/views/config/categoriesconfig.blade.php"
+			],
+			[
+				"categoriesconfig",
+				"resources/views/config/categoriesconfig.blade.php"
+			],
+			[
+				"areac",
+				"resources/views/areaconfig.blade.php"
+			],
+			[
+				"areas",
+				"app/Http/Controllers/AreasController.php"
+			],
+			[
+				"com",
+				"composer.json"
+			],
+			[
+				"create_place",
+				"database/migrations/2016_06_21_200222_create_placesTable.php"
+			],
+			[
+				"homec",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"data",
+				"config/database.php"
+			],
+			[
+				".",
+				".env"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"con",
+				"helper/config.php"
+			],
+			[
+				"gcm",
+				"gcm_register.php"
+			],
+			[
+				"re",
+				"gcm_register.php"
+			],
+			[
+				"regis",
+				"helper/gcm_register.php"
+			],
+			[
+				"conf",
+				"helper/config.php"
+			],
+			[
+				"db_",
+				"helper/gcm_db_functions.php"
+			],
+			[
+				"c",
+				"config.php"
+			],
+			[
+				"mu",
+				"views/place/multiselect.php"
+			],
+			[
+				"upda",
+				"views/place/update_basic.php"
+			],
+			[
+				"mul",
+				"views/place/multiselect.php"
+			],
+			[
+				"edit",
+				"views/place/edit_place.php"
+			],
+			[
+				"upd",
+				"views/place/update_basic.php"
+			],
+			[
+				"f",
+				"helper/functions.php"
+			],
+			[
+				"ed",
+				"views/place/edit_place.php"
+			],
+			[
+				"tr",
+				"triggerman.php"
+			],
+			[
+				"func",
+				"helper/functions.php"
+			],
+			[
+				"hand",
+				"handler.php"
+			],
+			[
+				"crae",
+				"views/place/create_place.php"
+			],
+			[
+				"fun",
+				"helper/functions.php"
+			],
+			[
+				"db",
+				"helper/db.php"
+			],
+			[
+				"han",
+				"handler.php"
+			],
+			[
+				"up",
+				"views/place/update_imgs.php"
+			],
+			[
+				"cre",
+				"views/place/create_place.php"
+			],
+			[
+				"map",
+				"map.php"
+			],
+			[
+				"update",
+				"views/place/update_basic.php"
+			],
+			[
+				"dp",
+				"helper/db.php"
+			],
+			[
+				"handl",
+				"handler.php"
+			],
+			[
+				"ha",
+				"handler.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"trig",
+				"triggerman.php"
+			],
+			[
+				"to",
+				"todo list"
+			],
+			[
+				"pla",
+				"helper/place-class.php"
+			],
+			[
+				"ci",
+				"config.php"
+			],
+			[
+				"edi",
+				"views/place/edit_place.php"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"tod",
+				"todo list"
+			],
+			[
+				"fin",
+				"views/place/find_place.php"
+			],
+			[
+				"login",
+				"views/login.php"
+			],
+			[
+				"pl",
+				"views/places.php"
+			],
+			[
+				"find",
+				"views/place/find_place.php"
+			],
+			[
+				"crea",
+				"views/place/create_place.php"
+			],
+			[
+				"ad",
+				"views/admin_home.php"
+			],
+			[
+				"fu",
+				"helper/functions.php"
+			],
+			[
+				"sess",
+				"sessions.php"
+			],
+			[
+				"lo",
+				"views/login.php"
+			],
+			[
+				"log",
+				"views/login.php"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"reg",
+				"views/register.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true
+}
