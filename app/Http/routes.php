@@ -77,10 +77,13 @@ Route::post('/place/new/create','PlaceController@store');
 Route::get('/places/view','PlaceController@view');
 
 /* view place in edit mode  */
-Route::get('places/edit/{id}','PlaceController@showPlaceIneditMode');
+Route::get('places/edit/{id}/{editType?}','PlaceController@showPlaceIneditMode');
 
 /* save place basic data update  */
-Route::post('/places/updatebasic',function(){return Request::all();});
+Route::post('/places/updatebasic','PlaceController@updatePlaceBasics');
+
+/* save place icon image   */
+Route::post('/places/updateicon','PlaceController@updatePlaceIcon');
 
 /*=====  End of Manage Place Routes   ======*/
 

@@ -3,15 +3,16 @@
 
 
 <ol class="breadcrumb">
-  <li><a href="#">Basic Data </a></li>
-  <li><a href="#">Images</a></li>
-  <li><a href="#">Options </a></li>
+  <li><a href="{{url('places/edit/'.$place_toEdit->id.'/basic')}}">Basic Data </a></li>
+  <li><a href="{{url('places/edit/'.$place_toEdit->id.'/images')}}">Images</a></li>
+  <li><a href="{{url('places/edit/'.$place_toEdit->id.'/options')}}">Options </a></li>
 </ol>
-@if ($place_toEdit)
+{{$editType}}
+@if ($place_toEdit)   <!-- place to edit if  -->
 
 
 <div class="panel panel-default">
-	<div class="panel-heading"><b>Edite Place </b></div>
+	<div class="panel-heading"><b>Edit Place </b></div>
 		  <div class="panel-body">
 		{{Form::open(array('url'=>'/places/updatebasic ','method'=>'post','class'=>'form-horizontal'))}}
 
@@ -110,7 +111,7 @@
 <!-- {{$place_toEdit->subcategories}} -->
 <!-- {{$place_toEdit['subcategories']}} -->
 
-@endif
+@endif <!-- end palce to edit if  -->
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">

@@ -20,6 +20,7 @@ class CreatePlacesTable extends Migration
             $table->string('address');
             $table->string('tel_number');
             $table->string('facebook_link');
+            $table->string('icon_img')->default('default.jpg');
 
             $table->integer('area_id')->unsigned();
             $table->integer('category_id')->unsigned();

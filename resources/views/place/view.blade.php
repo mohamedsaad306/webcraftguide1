@@ -6,11 +6,11 @@
 <!-- Main Categories List  -->
 
 <div class="list-group">
-  <a href="#" class="list-group-item active">Cras justo odio </a>
-  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item active">default view all categories  </a>
+  <a href="#" class="list-group-item">to view by category </a>
+  <a href="#" class="list-group-item">to view by category </a>
+  <a href="#" class="list-group-item">to view by category </a>
+  <a href="#" class="list-group-item">to view by category </a>
 
 </div>
 </div>	<!-- end of main Catageories div  -->
@@ -54,6 +54,26 @@
 
             		</tbody>
             	</table>
+                <!-- Pagnition -->
+                @if ($places->lastPage() > 1)
+                <center>
+                    <ul class="pagination">
+                        <li class="{{ ($places->currentPage() == 1) ? ' disabled' : '' }}">
+                            <a href="{{ $places->url(1) }}"><</a>
+                        </li>
+                        @for ($i = 1; $i <= $places->lastPage(); $i++)
+                            <li class="{{ ($places->currentPage() == $i) ? ' active' : '' }}">
+                                <a href="{{ $places->url($i) }}">{{ $i }}</a>
+                            </li>
+                        @endfor
+                        <li class="{{ ($places->currentPage() == $places->lastPage()) ? ' disabled' : '' }}">
+                            <a href="{{ $places->url($places->currentPage()+1) }}" >></a>
+                        </li>
+                    </ul>
+                </center>
+                @endif
+                <!-- end pagnition  -->
+                <br> 
             </div>	<!-- endof places table div  -->
   </div> <!-- end of the panel Body   -->
 </div> <!-- end of the panel  -->
