@@ -14,36 +14,64 @@
 <div class="panel panel-default">
 	<div class="panel-heading"><b>Edit Place </b></div>
 		  <div class="panel-body">
-		{{Form::open(array('url'=>'/places/updatebasic ','method'=>'post','class'=>'form-horizontal'))}}
+		{{Form::open(array('url'=>'/places/updateoptions ','method'=>'POST','class'=>'form-horizontal'))}}
 
 				<!-- place id -->
 				{{ Form::hidden('invisible',$place_toEdit->id,['name'=>'id']) }}
 				
-				<!-- place Name -->
+				<!-- working days  -->
 
-				<div class="form-group ">
+				<div class="form-group form-inline ">
 		            <div class="col-md-6">
-		            {{Form::label('place_name','Place name',['class'=>'control-label '])}}
-		            {{Form::text('place_name',$place_toEdit->place_name, ['class'=>'form-control','required'=>'true'])}}
+		            <label>Working Days </label>
+		            <BR>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="sat">Sat </label>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="sun">Sun </label>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="mon">Mon </label>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="tue">Tue </label>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="wed">Wed </label>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="thu">Thu </label>
+		            <label class="checkbox-inline">
+		            <input name="workingDays[]" type="checkbox" value="fri">Fri </label>
+		            
 		            </div>
 				</div>
 
-				<!-- place Description -->
+				<!-- Has Delivery system  -->
 
-		        <div class="form-group ">
-		        	<div class="col-md-6">
-		        	{!! Form::label('description','Description', ['class'=>'form-label']) !!}
-		        	{!! Form::textarea('description', $place_toEdit->description, ['class'=>'form-control ','rows'=>'2']) !!}
+		        <div class="form-group form-inline">
+		        	<div class="col-md-6 ">
+			        	<label>Delivery  </label>
+			        	<br>
+			            <label class="checkbox-inline">
+			            <input name="delivery" type="checkbox" value="true" >Delivry Avilable
+			            </label>
+			            <br>
+			             <label for="from">From</label>
+	    					<input type="text" class="form-control " name="delivery_from" placeholder="12:59">To
+						 <label for="to"></label>
+	    					<input type="text" class="form-control " name="delivery_to" placeholder="12:59">		        	
 		        	</div>
 		        </div>
 
-				<!-- place Address -->
+				<!-- place service Tags  -->
 
 		        <div class="form-group ">
 		        	<div class="col-md-6">
-		        	{!! Form::label('address','Address', ['class'=>'form-label']) !!}
-		        	{!! Form::text('address', $place_toEdit->address, ['class'=>'form-control' ,'required'=>'true']) !!}
+		        		<select class="js-example-tokenizer col-md-6" name="serviceTags[]" multiple="multiple">
+						  <option value="AL" selected >Alabama</option>
+						    
+						  <option value="WY">Wyoming</option>
+						</select>
+
 		        	</div>
+
 		        </div>
 
 				<!-- place Telephone Number  -->
@@ -114,6 +142,8 @@
 @endif <!-- end palce to edit if  -->
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function() {
 			$('#category_id').on("change ",function(){
@@ -147,9 +177,20 @@ jQuery(document).ready(function() {
 			 
 			 	
 			});// 
+	
 
 		});//end of ready doc   
 </script>
+
+/* Tagging Script  */
+<script type="text/javascript">
+	$(".js-example-tokenizer").select2({
+		  tags: true,
+		  tokenSeparators: [',', ' ']
+		});
+
+</script>
+
 
 
 @endsection

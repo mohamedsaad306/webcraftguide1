@@ -1,14 +1,61 @@
 /**
 		
-			TODO:
-			- create 
-			- Second todo item
+( TODO )
 
-			POSTPONED:
-			-service tags display 
+
+    (done )		 	==> make edit basic options for place 
+							\_> [name, describtion , etc ..  
+											],
+
+	(in progress)	==> make edit advanced options  for place 
+						\_> put all aveilable advanced setting for admin to select {  delivery avilability ,
+														 	products avilability ,
+														 	working days/hours	 ,
+														 	can offer products   ,
+														 	service tags ,
+														 	Custom service tasg  ,  
+
+														 	}
+
+								\_> chechk if place has accessability to advanced  setting given by the adminstator and display only 	allowed 			settings 
+								\_> 
+
+	(in progress )	 => make edit  images section :  
+							\_> make placa images gallery and prooduct gallery
+							\_> make place profile picture  
+
+	(pending )		==> user roles { admin , 
+										 owner , 
+										 registered user , 
+										 public user ,
+
+										 }	
+
+
+			(POSTPONED)
+============================================================
+			- service tags display 
 			- 
 		
 		 */
-				
 
+
+IMPORTANT NOTES 
+==============================================================
+
+		-PLACE SETTING { products [count] - gallery [count] - delivery [working hours ] -    }
  
+		- change bootstrap / fonts   ref links in res/layouts/app.blade.php                                  CHECK ARTISAN PUPLISH 
+		- download [select2] source files and edit their ref links to local                                               done 
+		- check how to access local files 
+
+
+		- place setting prpoduts and gallery setting will be saved as intgers thhat will decide how many items are available 
+			so this will require to chechk for place setting on (view - edit - add new elements to the place _ products or gallery images 
+
+
+==============================================================
+
+ Working scenario for tasks :: 
+ 		- advanced setting an admin block will be displayed to select wanted feautures to be added to the place  
+ 		- statci non-editable view will view  selected feautres for the place avilable for owner provided by  admin according to tbl	|setting 

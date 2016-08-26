@@ -64,7 +64,8 @@ Route::post('/appconfig/tags/create_servicetag','TagsController@store');
 /*============================================
 =            Manage Place Routes             =
 ============================================*/
-/* Manage places home  */
+/* Manage places home  *
+
 Route::get('/places','PlaceController@index');
 
 /* new places view   */
@@ -85,6 +86,8 @@ Route::post('/places/updatebasic','PlaceController@updatePlaceBasics');
 /* save place icon image   */
 Route::post('/places/updateicon','PlaceController@updatePlaceIcon');
 
+/* Place working hours  */
+Route::post('/places/updateoptions','PlaceController@updatePlaceOptions');
 /*=====  End of Manage Place Routes   ======*/
 
 });

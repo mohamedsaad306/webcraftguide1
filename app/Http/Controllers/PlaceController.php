@@ -114,4 +114,11 @@ class PlaceController extends Controller
         }else{return 'no file '.print_r($request); }
     }
 
+    /* update Place Options  */
+    public function updatePlaceOptions(Request $request)
+    {       
+        $input=$request->all();
+        return $input;
+    }
+
 }
