@@ -29,8 +29,14 @@ class Place extends Model
     		return $this->belongsToMany('App\ServiceTags','place_servicetags');
     }
 
-    public function setting()
+    public function settings()
     {
-        return $this->hasOne('App\Setting');
-    }    
+        return $this->hasOne('App\Setting','settings');
+
+    }
+    
+    public function workingDays()
+    {
+            return $this->belongsToMany('App\WorkingDays','place_workingDays');
+    }        
 }

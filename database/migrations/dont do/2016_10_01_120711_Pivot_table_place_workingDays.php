@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddPlaceWorkingDaysTable extends Migration
+class PivotTablePlaceWorkingDays extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class AddPlaceWorkingDaysTable extends Migration
     public function up()
     {
         // Sore working days for places 
-        Schema::create('places_workingDays', function (Blueprint $table) {
+        Schema::create('place_workingDays', function (Blueprint $table) {
             
             $table->increments('id');
             $table->integer('place_id');
-            $table->integer('workingdays_id');            
+            $table->integer('workingDays_id');
+
+            $table->foreign('place_id')->references('id')->on('palces');
+            $table->foreign('workingDays_id')->references('id')->on('workingDays');
+            
         });
     }
 
@@ -28,6 +32,7 @@ class AddPlaceWorkingDaysTable extends Migration
      */
     public function down()
     {
-        //
+ 
+    Schema::drop('place_workingDays');
     }
 }

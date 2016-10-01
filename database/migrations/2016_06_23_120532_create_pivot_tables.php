@@ -31,9 +31,10 @@ class CreatePivotTables extends Migration
             $table->integer('place_id')->unsigned()->index();
             $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
 
-            $table->integer('servicetags_id')->unsigned()->index();
-            $table->foreign('servicetags_id')->references('id')->on('servicetags')->onDelete('cascade');
+            $table->integer('service_tags_id')->unsigned()->index();
+            $table->foreign('service_tags_id')->references('id')->on('servicetags')->onDelete('cascade');
             
+            $table->timestamps();
          });
     }
 

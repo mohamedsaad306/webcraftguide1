@@ -13,11 +13,15 @@ class AddPlaceWorkingDaysTable extends Migration
     public function up()
     {
         // Sore working days for places 
-        Schema::create('places_workingDays', function (Blueprint $table) {
+        Schema::create('places_workingdays', function (Blueprint $table) {
             
             $table->increments('id');
             $table->integer('place_id');
-            $table->integer('workingdays_id');            
+            $table->integer('workingdays_id');
+            
+            
+
+            
         });
     }
 

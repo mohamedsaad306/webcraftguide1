@@ -26,19 +26,19 @@
 		            <label>Working Days </label>
 		            <BR>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="sat">Sat </label>
+		            <input name="workingDays[]" type="checkbox" value="1">Sat </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="sun">Sun </label>
+		            <input name="workingDays[]" type="checkbox" value="2">Sun </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="mon">Mon </label>
+		            <input name="workingDays[]" type="checkbox" value="3">Mon </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="tue">Tue </label>
+		            <input name="workingDays[]" type="checkbox" value="4">Tue </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="wed">Wed </label>
+		            <input name="workingDays[]" type="checkbox" value="5">Wed </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="thu">Thu </label>
+		            <input name="workingDays[]" type="checkbox" value="6">Thu </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="fri">Fri </label>
+		            <input name="workingDays[]" type="checkbox" value="7">Fri </label>
 		            <br><br>
 		            
 		            <!-- from  -->
@@ -118,10 +118,8 @@
 						    <option value="{{$value}}"  >{{$tag}}</option>    
 
 						@endforeach
-
 						  <!-- <option value="AL" selected >Alabama</option>     -->
-						  <option value="WY">Wyoming</option>
-						
+						  <!-- 	  <option value="WY">Wyoming</option> -->
 						</select>
 
 		        	</div>

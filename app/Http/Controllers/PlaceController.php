@@ -10,6 +10,7 @@ use App\Area As Area;
 use App\Category As Category;
 use App\Subcategory As Subcategory;
 use App\ServiceTags AS ServiceTags;
+use App\Setting AS Setting;
 use Image;
 
 class PlaceController extends Controller
@@ -136,27 +137,64 @@ class PlaceController extends Controller
     {       
         $input=$request->all();
         $place = Place::find($input['id']);
+        $place_settings=Setting::where('place_id',$place->id)->first();
+        
+        $place_setting=[];
 
-        // if (isset($input['workingDays'])) {
+        if (isset($input['workingDays'])) {
+            $place->workingDays()->detach();
+            $place->workingDays()->attach($input['workingDays']);
             
-        // }
-        // if (isset($input['serviceTags'])) {
+            // $place->setting()->save(new Setting(['work_from'=>$input['work_from'],'work_to'=>$input['work_to']]));
+            $place_settings->work_from=$input['work_from'];
+            $place_settings->work_to=$input['work_to'];
             
-        // }
-        // if (isset($input['latitude'] && isset($input['longitude']))) {
+
+
+        }
+        if (isset($input['serviceTags'])) {
+            $place->serviceTags()->detach();
+            $place->serviceTags()->attach($input['serviceTags']);
+
+        }
+        if ((isset($input['latitude']) && (isset($input['longitude'])))) {
+            $lat= $input['latitude'];
+            $long=$input['longitude'];
+            // $place->setting()->save(new Setting(['latitude'=>$lat , 'longitude'=>$long]));
+            $place_settings->latitude=$lat;
+            $place_settings->longitude=$long;
+                
+        }
+        if (isset($input['delivery'])) {
+            if ($input['delivery']== true) {
+                # code...
+            // $place->setting()->save(new Setting(['delivery'=>'true','delivery_from'=>$input['delivery_from'],'delivery_to'=>$input['delivery_to']]));
+            $place_settings->delivery='true';
+            $place_settings->delivery_from=$input['delivery_from'];
+            $place_settings->delivery_to=$input['delivery_to'];
             
-        // }
-        // if (isset($input['delivery'])) {
+            }else{
+            // $place->setting()->save(new Setting(['delivery'=>'false']));
+            $place_settings->delivery='false';
             
-        // }
-        // if (isset($input[''])) {
+            }
             
-        // }
-        // if (isset($input[''])) {
+        }
+        if (isset($input['facebook_link'])) {
+            // $place->setting()->save(new Setting(['facebook_link'=>$input['facebook_link']]));
+            $place_settings->facebook_link=$input['facebook_link'];
             
-        // }        
+        }
+
+        $place_settings->save();
+        $place->save();
 
         return $input;
+    }
+
+    public function showingPlace($id)
+    {
+        return Place::find($id)->withPivot();
     }
 
 }

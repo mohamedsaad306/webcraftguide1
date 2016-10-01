@@ -90,6 +90,10 @@ Route::post('/places/updateicon','PlaceController@updatePlaceIcon');
 Route::post('/places/updateoptions','PlaceController@updatePlaceOptions');
 /*=====  End of Manage Place Routes   ======*/
 
+
+Route::get('places/showing/{id}','PlaceController@showingPlace');
+
+
 });
 
 

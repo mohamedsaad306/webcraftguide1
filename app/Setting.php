@@ -24,7 +24,7 @@ class Setting extends Model
 
     public function place()
     {
-        return $this->belongsTo('App\Place','setting');
+        return $this->belongsTo('App\Place','places');
     }    
 
 }

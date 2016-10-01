@@ -11,11 +11,15 @@ class ServiceTags extends Model
 							'servicetag_name',
 							'subcategory_id',
 							];
-
+    public function places()
+    {
+        return $this->belongsToMany('App\Place','place_servicetags');
+    }
     public function subcategory()
     {
     	return $this->belongsTo('App\Subcategory');
     }
+
 
     // get avliable service tags according to sub categories 
     public static function avilableServicetags($subcategories) 
