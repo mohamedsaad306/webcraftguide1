@@ -333,6 +333,7 @@ class ComposerStaticInit95a13a55bf82a82658db2d934c78f9e0
         'CreateSubCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_23_103657_create_sub_categories_table.php',
         'CreateSubcategories' => __DIR__ . '/../..' . '/database/migrations/dont do/2016_06_23_124503_create_subcategories.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
+        'CreateWorkingDHModelsTables' => __DIR__ . '/../..' . '/database/migrations/2016_08_27_160926_createWorkingDH_models_tables.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',

@@ -17,4 +17,16 @@ class ServiceTags extends Model
     	return $this->belongsTo('App\Subcategory');
     }
 
+    // get avliable service tags according to sub categories 
+    public static function avilableServicetags($subcategories) 
+    {
+      // $servicetags=[];
+      // foreach ($subcategories as $key ) {
+          
+        return $tags=Servicetags::whereIN('subcategory_id',$subcategories)->lists('id','servicetag_name');
+      //   array_push($servicetags, $tags);
+      // }
+      // return $servicetags;
+      
+    }
 }

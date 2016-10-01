@@ -15,9 +15,9 @@ class AddSubcategoryToCategoryRelation extends Migration
         Schema::table('subcategories', function($table) {
                 //
             // $table->integer('main_category_id')->unsigned();
-            // $table->foriegn('main_category_id')-references('id')->on('categories');
-            $table->integer('category_id')->unsigned()->index();
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');            
+            // $table->foreign('main_category_id')->references('id')->on('categories');
+            // $table->integer('category_id')->unsigned()->index();
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');            
 
             });    }
 

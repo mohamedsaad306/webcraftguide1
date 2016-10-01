@@ -16,8 +16,8 @@ class AddPlaceWorkingDaysTable extends Migration
         Schema::create('places_workingdays', function (Blueprint $table) {
             
             $table->increments('id');
-            $table->integer('palce_id');
-            $table->string('workDay');
+            $table->integer('place_id');
+            $table->integer('workingdays_id');
             
             
 

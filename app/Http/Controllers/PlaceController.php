@@ -9,6 +9,7 @@ use App\Place As Place;
 use App\Area As Area;
 use App\Category As Category;
 use App\Subcategory As Subcategory;
+use App\ServiceTags AS ServiceTags;
 use Image;
 
 class PlaceController extends Controller
@@ -38,6 +39,9 @@ class PlaceController extends Controller
     	$input=$request->all();
     	$place= Place::create($input);
     	$place->subcategories()->attach($input['subcategories']); 
+        $place->setting()->create([
+            "facebook_link"=>"CraftSolution"
+            ]);
     	return redirect('/places/new/');
     }
 
@@ -57,22 +61,35 @@ class PlaceController extends Controller
         $areas=Area::lists('area_name','id');
         $categories=Category::lists('category_name','id');
         $subcategories=Subcategory::all('subcategory_name','id','category_id');
+
+        // get avilable service tags according to place sub category 
+        if(isset($place_toEdit['subcategories'])){
+            
+            // extracting sub categories ids
+            $subcats=[]; 
+            foreach ($place_toEdit['subcategories']as $key => $value) {
+                array_push($subcats, $value['id']);
+            }
+            $avilableServicetags=ServiceTags::avilableServicetags($subcats);
+        }
+
+        $servicetags=ServiceTags::all();
         
         //editing page 
         
         // editing basic data view     
         if ($editType=='basic'){
-        return view('place.edit_basics',compact('id','areas','categories','subcategories','place_toEdit','editType'));
+        return view('place.edit_basics',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType'));
         
         }
         else if ($editType=='images') {
             
-        return view('place.edit_images',compact('id','areas','categories','subcategories','place_toEdit','editType'));
+        return view('place.edit_images',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType'));
                     }
         
         elseif ($editType=='options') {
         
-        return view('place.edit_options',compact('id','areas','categories','subcategories','place_toEdit','editType'));
+        return view('place.edit_options',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType'));
             
         }
 
@@ -118,6 +135,27 @@ class PlaceController extends Controller
     public function updatePlaceOptions(Request $request)
     {       
         $input=$request->all();
+        $place = Place::find($input['id']);
+
+        // if (isset($input['workingDays'])) {
+            
+        // }
+        // if (isset($input['serviceTags'])) {
+            
+        // }
+        // if (isset($input['latitude'] && isset($input['longitude']))) {
+            
+        // }
+        // if (isset($input['delivery'])) {
+            
+        // }
+        // if (isset($input[''])) {
+            
+        // }
+        // if (isset($input[''])) {
+            
+        // }        
+
         return $input;
     }
 

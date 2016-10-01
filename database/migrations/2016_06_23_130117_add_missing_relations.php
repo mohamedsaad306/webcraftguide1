@@ -20,7 +20,7 @@ class AddMissingRelations extends Migration
 
         Schema::table('place_servicetags', function($table) {
             //
-            $table->foreign('servicetags_id')->references('id')->on('servicetags');
+            // $table->foreign('servicetags_id')->references('id')->on('servicetags');
         });
     }
 

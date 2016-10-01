@@ -14,27 +14,27 @@ class CreatePivotTables extends Migration
     {
         /* palce - Sub  category pivot table  */
         
-        // Schema::create('place_subcategory', function (Blueprint $table) {
-        //     $table->integer('place_id')->unsigned()->index();
-        //     $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
+        Schema::create('place_subcategory', function (Blueprint $table) {
+            $table->integer('place_id')->unsigned()->index();
+            $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
 
-        //     $table->integer('subcategory_id')->unsigned()->index();
-        //     $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
+            $table->integer('subcategory_id')->unsigned()->index();
+            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
             
-        //     //
-        // });
+            //
+        });
 
-        /* palce - service tags  pivot table  */
+         // palce - service tags  pivot table  
 
-        // Schema::create('place_servicetags', function (Blueprint $table) {
+        Schema::create('place_servicetags', function (Blueprint $table) {
             
-            // $table->integer('place_id')->unsigned()->index();
-            // $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
+            $table->integer('place_id')->unsigned()->index();
+            $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
 
-            // $table->integer('servicetags_id')->unsigned()->index();
-            // $table->foreign('servicetags_id')->references('id')->on('servicetags')->onDelete('cascade');
+            $table->integer('servicetags_id')->unsigned()->index();
+            $table->foreign('servicetags_id')->references('id')->on('servicetags')->onDelete('cascade');
             
-         // });
+         });
     }
 
     /**

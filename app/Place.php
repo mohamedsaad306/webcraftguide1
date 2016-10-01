@@ -28,4 +28,9 @@ class Place extends Model
     {
     		return $this->belongsToMany('App\ServiceTags','place_servicetags');
     }
+
+    public function setting()
+    {
+        return $this->hasOne('App\Setting');
+    }    
 }
