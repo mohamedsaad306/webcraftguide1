@@ -25,8 +25,14 @@
 		            <div class="col-md-6">
 		            <label>Working Days </label>
 		            <BR>
+		           @foreach ($workingDays as $wd)
+		           	
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="1">Sat </label>
+		            <input name="workingDays[]" type="checkbox" value="{{$wd['id']}}" 
+		            {{($place_toEdit->workingDays->contains($wd['id']))?'checked=""':""}}>
+		            {{ucfirst( $wd['day'] )}} </label>
+		           @endforeach
+<!-- 
 		            <label class="checkbox-inline">
 		            <input name="workingDays[]" type="checkbox" value="2">Sun </label>
 		            <label class="checkbox-inline">
@@ -38,7 +44,7 @@
 		            <label class="checkbox-inline">
 		            <input name="workingDays[]" type="checkbox" value="6">Thu </label>
 		            <label class="checkbox-inline">
-		            <input name="workingDays[]" type="checkbox" value="7">Fri </label>
+		            <input name="workingDays[]" type="checkbox" value="7">Fri </label> -->
 		            <br><br>
 		            
 		            <!-- from  -->
