@@ -20,7 +20,7 @@
 								\_> chechk if place has accessability to advanced  setting given by the adminstator and display only 	allowed 			settings 
 								\_> 
 
-	(in progress )	 => make edit  images section :  
+	(in progress )	==> make edit  images section :  
 							\_> make placa images gallery and prooduct gallery
 							\_> make place profile picture  
 
@@ -30,6 +30,8 @@
 										 public user ,
 
 										 }	
+					==> make the roll back for all migrations 
+
 
 
 			(POSTPONED)
@@ -47,10 +49,10 @@ IMPORTANT NOTES
  
 		- change bootstrap / fonts   ref links in res/layouts/app.blade.php                                  CHECK ARTISAN PUPLISH 
 		- download [select2] source files and edit their ref links to local                                               done 
+
 		- check how to access local files 
 
-
-		- place setting prpoduts and gallery setting will be saved as intgers thhat will decide how many items are available 
+		- place setting prpoduts and gallery setting will be saved as intgers thhat will decide how many items are  	 available 
 			so this will require to chechk for place setting on (view - edit - add new elements to the place _ products or gallery images 
 
 

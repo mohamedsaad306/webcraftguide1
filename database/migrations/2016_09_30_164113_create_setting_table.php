@@ -18,6 +18,7 @@ class CreateSettingTable extends Migration
             $table->integer('place_id')->unsigned();
             $table->foreign('place_id')->references('id')->on('places')->onDelete('cascade');
             
+            $table->string('open247')->nullable();
             $table->time('work_from')->nullable();
             $table->time('work_to')->nullable();
             

@@ -42,6 +42,7 @@ class PlaceController extends Controller
     	$place= Place::create($input);
     	$place->subcategories()->attach($input['subcategories']); 
         $place->settings()->create([
+            "open247"=>"false",
             "work_from"=>'09:00',
             "work_to"=>'17:00',
             "delivery"=>'false',
@@ -154,6 +155,12 @@ class PlaceController extends Controller
             $place->workingDays()->attach($input['workingDays']);
             
             // $place->setting()->save(new Setting(['work_from'=>$input['work_from'],'work_to'=>$input['work_to']]));            
+        }
+        if (isset($input['open247'])) {
+            if ($input['open247']== true) {
+            $place_settings->open247=$input['open247'];
+                
+            }
         }
         if ( ($input['work_from']!='') &&($input['work_to']!='') ) {
             # code...
