@@ -11,6 +11,7 @@ use App\Category As Category;
 use App\Subcategory As Subcategory;
 use App\ServiceTags AS ServiceTags;
 use App\Setting AS Setting;
+use App\WorkingDays AS WorkingDays;
 use Image;
 
 class PlaceController extends Controller
@@ -40,7 +41,14 @@ class PlaceController extends Controller
     	$input=$request->all();
     	$place= Place::create($input);
     	$place->subcategories()->attach($input['subcategories']); 
-        $place->setting()->create([
+        $place->settings()->create([
+            "work_from"=>'09:00',
+            "work_to"=>'17:00',
+            "delivery"=>'false',
+            "delivery_from"=>'00:00',
+            "delivery_to"=>'00:00',
+            "latitude"=>'0.0',
+            "longitude"=>'0.0',
             "facebook_link"=>"CraftSolution"
             ]);
     	return redirect('/places/new/');
@@ -74,7 +82,7 @@ class PlaceController extends Controller
             $avilableServicetags=ServiceTags::avilableServicetags($subcats);
         }
 
-        $servicetags=ServiceTags::all();
+        // $servicetags=ServiceTags::all();
         
         //editing page 
         
@@ -89,8 +97,8 @@ class PlaceController extends Controller
                     }
         
         elseif ($editType=='options') {
-        
-        return view('place.edit_options',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType'));
+        $workingDays=WorkingDays::all('day','id');
+        return view('place.edit_options',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType','workingDays'));
             
         }
 
@@ -141,23 +149,24 @@ class PlaceController extends Controller
         
         $place_setting=[];
 
-        if (isset($input['workingDays'])) {
+        if ($input['workingDays']!='') {
             $place->workingDays()->detach();
             $place->workingDays()->attach($input['workingDays']);
             
-            // $place->setting()->save(new Setting(['work_from'=>$input['work_from'],'work_to'=>$input['work_to']]));
+            // $place->setting()->save(new Setting(['work_from'=>$input['work_from'],'work_to'=>$input['work_to']]));            
+        }
+        if ( ($input['work_from']!='') &&($input['work_to']!='') ) {
+            # code...
             $place_settings->work_from=$input['work_from'];
             $place_settings->work_to=$input['work_to'];
-            
-
-
         }
-        if (isset($input['serviceTags'])) {
+        
+        if ((isset($input['serviceTags']))&&($input['serviceTags']!='')) {
             $place->serviceTags()->detach();
             $place->serviceTags()->attach($input['serviceTags']);
 
         }
-        if ((isset($input['latitude']) && (isset($input['longitude'])))) {
+        if (($input['latitude']!='' && ($input['longitude']!=''))) {
             $lat= $input['latitude'];
             $long=$input['longitude'];
             // $place->setting()->save(new Setting(['latitude'=>$lat , 'longitude'=>$long]));
@@ -180,7 +189,7 @@ class PlaceController extends Controller
             }
             
         }
-        if (isset($input['facebook_link'])) {
+        if ($input['facebook_link']!='') {
             // $place->setting()->save(new Setting(['facebook_link'=>$input['facebook_link']]));
             $place_settings->facebook_link=$input['facebook_link'];
             
@@ -194,7 +203,15 @@ class PlaceController extends Controller
 
     public function showingPlace($id)
     {
-        return Place::find($id)->withPivot();
+
+        $place_toEdit=Place::find($id);
+        $st=$place_toEdit->subcategories;
+        $st=$place_toEdit->servicetags;
+        $st=$place_toEdit->workingDays;
+        $friday=($place_toEdit->workingDays->contains(7) ) ?  'hasFriday': 'noFriday';
+
+        return $friday;
+
     }
 
 }
