@@ -18,15 +18,15 @@ class CreateWorkingdaysTable extends Migration
 
             $table->string('day');
             
-            $table->foreign('place_id')->references('id')->on('place');
+            // $table->foreign('place_id')->references('id')->on('place');
 
-            $table->foreign('working_days_id')->references('id')->on('workingDays');
+            // $table->foreign('working_days_id')->references('id')->on('workingDays');
 
 
             $table->timestamps();
         });
          
-         Sore working days for places 
+         // Sore working days for places 
         Schema::create('place_workingDays', function (Blueprint $table) {
             
             $table->increments('id');

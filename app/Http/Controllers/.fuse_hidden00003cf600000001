@@ -1,0 +1,224 @@
+<?php
+
+namespace App\Http\Controllers;
+
+ use Illuminate\Http\Request;
+// use Request;
+use App\Http\Requests;
+use App\Place As Place;
+use App\Area As Area;
+use App\Category As Category;
+use App\Subcategory As Subcategory;
+use App\ServiceTags AS ServiceTags;
+use App\Setting AS Setting;
+use App\WorkingDays AS WorkingDays;
+use Image;
+
+class PlaceController extends Controller
+{
+	public function __construct(){
+		$this->middleware('auth');
+	}
+	
+    //
+
+    public function index()
+    {
+    	return view('place.home');
+    }
+
+    public function newPlace()
+    {
+    	/* Retrive Categories lists & areas lists to fill dropdown menus in creation form   */
+
+    	$areas=Area::lists('area_name','id');
+    	$categories=Category::lists('category_name','id');
+
+    	return view('place.newplace',compact('areas','categories'));
+    }
+    public function store(Request $request)
+    {
+    	$input=$request->all();
+    	$place= Place::create($input);
+    	$place->subcategories()->attach($input['subcategories']); 
+        $place->settings()->create([
+            "open247"=>"false",
+            "work_from"=>'09:00',
+            "work_to"=>'17:00',
+            "delivery"=>'false',
+            "delivery_from"=>'00:00',
+            "delivery_to"=>'00:00',
+            "latitude"=>'0.0',
+            "longitude"=>'0.0',
+            "facebook_link"=>"CraftSolution"
+            ]);
+    	return redirect('/places/new/');
+    }
+
+    /* view all places at  catego */
+    public function view()
+    {
+        // $places=Place::all();
+        $places=Place::paginate(10);
+        return view('place.view',compact('places'));
+    }
+
+    /* View place in edit mode  */
+    public function showPlaceIneditMode($id,$editType ='basic')
+    {
+        $place_toEdit=Place::find($id);
+
+        $areas=Area::lists('area_name','id');
+        $categories=Category::lists('category_name','id');
+        $subcategories=Subcategory::all('subcategory_name','id','category_id');
+
+        // get avilable service tags according to place sub category 
+        if(isset($place_toEdit['subcategories'])){
+            
+            // extracting sub categories ids
+            $subcats=[]; 
+            foreach ($place_toEdit['subcategories']as $key => $value) {
+                array_push($subcats, $value['id']);
+            }
+            $avilableServicetags=ServiceTags::avilableServicetags($subcats);
+        }
+
+        // $servicetags=ServiceTags::all();
+        
+        //editing page 
+        
+        // editing basic data view     
+        if ($editType=='basic'){
+        return view('place.edit_basics',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType'));
+        
+        }
+        else if ($editType=='images') {
+            
+        return view('place.edit_images',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType'));
+                    }
+        
+        elseif ($editType=='options') {
+        $workingDays=WorkingDays::all('day','id');
+        return view('place.edit_options',compact('id','areas','categories','subcategories','avilableServicetags','place_toEdit','editType','workingDays'));
+            
+        }
+
+    }
+
+
+    /* edit the place basic data   */
+    public function updatePlaceBasics(Request $request)
+    {
+        $input=$request->all();
+        
+        $place = Place::find($input['id']);
+        
+        $place->place_name=$input['place_name'];
+        $place->description=$input['description'];  
+        $place->address=$input['address'];
+        $place->tel_number=$input['tel_number'];
+        $place->area_id=$input['area_id'];
+        $place->category_id=$input['category_id'];
+        $place->subcategories()->detach();
+        $place->subcategories()->attach($input['subcategories']);
+        $place->save();
+
+        return redirect ('/places/edit/'.$input['id']);
+    }
+
+    public function updatePlaceIcon( Request $request )
+    {
+        
+        
+        if($request->hasFile('iconImg')){
+            $icon=$request->file('iconImg');
+            $img_name=time().'.'.$icon->getClientOriginalExtension();
+            Image::make($icon)->resize(250,250)->save(public_path('/images/iconImgs/'.$img_name));
+            $place=Place::find($request['id']);
+            $place->iconImg=$img_name;
+            $place->save();
+            return redirect('/places/edit/'.$request['id'].'/images');
+        }else{return 'no file '.print_r($request); }
+    }
+
+    /* update Place Options  */
+    public function updatePlaceOptions(Request $request)
+    {       
+        $input=$request->all();
+        $place = Place::find($input['id']);
+        $place_settings=Setting::where('place_id',$place->id)->first();
+        
+        $place_setting=[];
+
+        if ($input['workingDays']!='') {
+            $place->workingDays()->detach();
+            $place->workingDays()->attach($input['workingDays']);
+            
+            // $place->setting()->save(new Setting(['work_from'=>$input['work_from'],'work_to'=>$input['work_to']]));            
+        }
+        if (isset($input['open247'])) {
+            if ($input['open247']== true) {
+            $place_settings->open247=$input['open247'];
+                
+            }
+        }
+        if ( ($input['work_from']!='') &&($input['work_to']!='') ) {
+            # code...
+            $place_settings->work_from=$input['work_from'];
+            $place_settings->work_to=$input['work_to'];
+        }
+        
+        if ((isset($input['serviceTags']))&&($input['serviceTags']!='')) {
+            $place->serviceTags()->detach();
+            $place->serviceTags()->attach($input['serviceTags']);
+
+        }
+        if (($input['latitude']!='' && ($input['longitude']!=''))) {
+            $lat= $input['latitude'];
+            $long=$input['longitude'];
+            // $place->setting()->save(new Setting(['latitude'=>$lat , 'longitude'=>$long]));
+            $place_settings->latitude=$lat;
+            $place_settings->longitude=$long;
+                
+        }
+        if (isset($input['delivery'])) {
+            if ($input['delivery']== true) {
+                # code...
+            // $place->setting()->save(new Setting(['delivery'=>'true','delivery_from'=>$input['delivery_from'],'delivery_to'=>$input['delivery_to']]));
+            $place_settings->delivery='true';
+            $place_settings->delivery_from=$input['delivery_from'];
+            $place_settings->delivery_to=$input['delivery_to'];
+            
+            }else{
+            // $place->setting()->save(new Setting(['delivery'=>'false']));
+            $place_settings->delivery='false';
+            
+            }
+            
+        }
+        if ($input['facebook_link']!='') {
+            // $place->setting()->save(new Setting(['facebook_link'=>$input['facebook_link']]));
+            $place_settings->facebook_link=$input['facebook_link'];
+            
+        }
+
+        $place_settings->save();
+        $place->save();
+
+        return $input;
+    }
+
+    public function showingPlace($id)
+    {
+
+        $place_toEdit=Place::find($id);
+        $st=$place_toEdit->subcategories;
+        $st=$place_toEdit->servicetags;
+        $st=$place_toEdit->workingDays;
+        $friday=($place_toEdit->workingDays->contains(7) ) ?  'hasFriday': 'noFriday';
+
+        return $friday;
+
+    }
+
+}
