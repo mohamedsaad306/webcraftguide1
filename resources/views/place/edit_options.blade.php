@@ -173,6 +173,8 @@
 <!-- {{$place_toEdit['subcategories']}} -->
 {{ $place_toEdit}}
 <hr>
+{{ $workingDays }}
+<hr>
 {{ $areas }}
 <hr>
 {{ $categories }}

@@ -12,9 +12,9 @@ class WorkingDays extends Model
     			'created_at',
     			'updated_at',
     ];
-    
+    protected $table='workingDays';
     public function places()
     {
-        return $this->belongsToMany('App\Place','places');
+        return $this->belongsToMany('App\Place','place_workingDays');
     }			
 }

@@ -31,12 +31,12 @@ class Place extends Model
 
     public function settings()
     {
-        return $this->hasOne('App\Setting','settings');
+        return $this->hasOne('App\Setting');
 
     }
     
     public function workingDays()
     {
-            return $this->belongsToMany('App\WorkingDays','place_workingDays');
+            return $this->belongsToMany('App\WorkingDays','place_workingDays','place_id','working_days_id');
     }        
 }
